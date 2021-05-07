@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F6F4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Hindi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Hindi Translation"
+        android:textColor="#4F2412"
+        android:textSize="30sp"
+        android:background="#F9F6F4"
+        android:paddingBottom="50dp"
+        android:paddingHorizontal="10dp"
+        android:layout_margin="15dp"
+        android:drawableBottom="@drawable/arraw"
+        android:drawablePadding="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/Gujarati"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Gujarati"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="50dp"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="10dp"
+        android:drawableBottom="@drawable/arraw"
+        android:background="#E9E0DB"
+        android:gravity="center"
+        android:text="Gujarati Translation"
+        android:textColor="#4F2412"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/English"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hindi" />
+
+    <Button
+        android:id="@+id/English"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="English Translation"
+        android:background="#F9F6F4"
+        android:textColor="#4F2412"
+        android:paddingBottom="50dp"
+        android:drawableBottom="@drawable/arraw"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gujarati" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
